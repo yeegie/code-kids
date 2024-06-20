@@ -3,11 +3,15 @@ import { Outlet } from "react-router-dom";
 
 // import styles from "./layout.scss";
 
+import { Header } from "@widgets/header";
+import { Promo } from "@widgets/promo";
+
 export const Layout = () => {
   return (
     <>
       <SkeletonTheme baseColor="#ebebeb" highlightColor="#f5f5f5">
-        {/* <Header /> */}
+        <Promo />
+        <Header />
         <Outlet />
         {/* <Footer /> */}
       </SkeletonTheme>
