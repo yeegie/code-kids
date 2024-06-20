@@ -1,0 +1,31 @@
+.button {
+  font-size: 18pt;
+  cursor: pointer;
+
+  border-radius: 25px;
+  border: none;
+
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: none;
+}
+
+.fill {
+  background-color: #5196ff;
+  color: white;
+}
+
+.outline {
+  border-radius: 15px;
+  border: solid 2px #363636;
+  background-color: transparent;
+}
