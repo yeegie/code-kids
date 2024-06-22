@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  gap: 1rem;
+
+  justify-content: center;
+
+  grid-template-columns: repeat(4, 300px);
+}
+
+.section {
+  display: grid;
+  grid-row: repeat(2, 1fr);
+}
