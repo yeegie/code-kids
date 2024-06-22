@@ -1,0 +1,23 @@
+.card {
+  width: 300px;
+  height: 150px;
+
+  border-radius: 15px;
+  background-color: #eaeaea;
+
+  .info {
+    padding: 0.5rem;
+  }
+
+  .content {
+    padding: 0.5rem;
+
+    h1,
+    p {
+      margin: 0;
+      cursor: default;
+    }
+
+    p {}
+  }
+}
