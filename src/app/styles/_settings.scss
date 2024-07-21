@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.page {}
+
+.page__body {
+    font-family: var(--font-family);
+    background-color: var(--white);
+    color: var(--black);
+
+    line-height: 1.5;
+}
+
+.container {
+    margin: 0 auto;
+    // padding: 0 var(--container-offset);
+    max-width: calc(var(--container-width) + (var(--container-offset) * 2));
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    cursor: default;
+}
