@@ -2,6 +2,7 @@ export interface ICourse {
   info?: "popular";
   title: string;
   mounths: number;
-  color: string;
-  // image: string;
+  color?: string;
+  image: string;
+  categories: string[];
 }

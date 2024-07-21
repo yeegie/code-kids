@@ -1,8 +1,5 @@
-.container {
-  display: grid;
-  gap: 1rem;
-
-  justify-content: center;
-
-  grid-template-columns: repeat(4, 300px);
+.teachers {
+  .teachers__list {
+    padding: 40px 0;
+  }
 }

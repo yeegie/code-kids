@@ -1,25 +1,28 @@
 .header {
-  min-height: 50px;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-
-  .header__logo {
-    margin-left: 1rem;
-
-    a {
-      font-size: 25pt;
-      font-weight: bold;
-
-      .header__underscope {
-      }
-    }
-  }
-
-  .header__navholder {
-    margin-left: auto;
-    margin-right: 1rem;
-  }
+    
 }
+
+.header__container {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    .header__logo img {
+        padding: 20px 0;
+    }
+
+    .header__button_container ul {
+        display: flex;
+        margin: 0;
+        padding: 20px 0;
+
+        a {
+            text-decoration: none;
+            color: var(--black);
+            font-size: 18px;
+        }
+    }
+}
+
+

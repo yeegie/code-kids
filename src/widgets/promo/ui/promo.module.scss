@@ -1,9 +1,14 @@
 .promo {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-
-  min-height: 50px;
   background-color: #eeff84;
+
+  .promo__content {
+    padding: 15px 0;
+    display: flex;
+    cursor: default;
+  }
+
+  p {
+    margin: 0;
+    font-size: 18px;
+  }
 }

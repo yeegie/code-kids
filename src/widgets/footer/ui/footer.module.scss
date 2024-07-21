@@ -1,0 +1,44 @@
+.footer {
+    background-color: var(--feedback-bg);
+
+    h2, p, span {
+        color: var(--white);
+    }
+
+    .footer__container {
+        padding: 3rem 0;
+
+        .footer__content {
+            display: flex;
+            justify-content: space-between;
+
+            .footer__contacts {
+                h2 {
+                    font-size: 25px;
+                    text-align: left
+                }
+
+                p {
+                    font-size: 18px;
+                }
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer__address {
+                width: 35rem;
+                h2 {
+                    text-align: left;
+                }
+                p {
+                    // width: 80%;
+                }
+            }
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+span {
+    font-weight: bold;
+}

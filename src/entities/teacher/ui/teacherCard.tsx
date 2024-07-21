@@ -20,20 +20,13 @@ export const TeacherCard: React.FC<TeacherCardProps> = ({
   image,
 }) => {
   return (
-    <div className={clsx(styles.card)}>
-      <div className={styles.avatar}>
-        <img src={image} />
-      </div>
-      <div className={styles.content}>
-        <Title fontSize="16pt">{name}</Title>
+    <div className={styles.card}>
+      <div className={styles.card__avatar}><img src={image} alt={`Учитель ${name}`} /></div>
+      <div className={styles.card__content}>
+        <Title size={2}>{name}</Title>
         <Paragraph>👤 {bio}</Paragraph>
-        <Paragraph>
-          <b>📚 Направления: </b>
-          {skills}
-        </Paragraph>
-        <Paragraph>
-          <b>★ {reviews} отзывов</b>
-        </Paragraph>
+        <Paragraph><b>📚 Направления: </b>{skills}</Paragraph>
+        <Paragraph><b>★ {reviews} отзывов</b></Paragraph>
       </div>
     </div>
   );

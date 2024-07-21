@@ -1,5 +1,5 @@
 export interface ITeacher {
-  image: string;
+  image?: string;
   name: string;
   bio: string;
   skills: string;

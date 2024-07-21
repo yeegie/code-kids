@@ -1,0 +1,29 @@
+.button_filter {
+    font-size: 14px;
+    border: none;
+
+    border-radius: 20px;
+    height: 35px;
+    padding: 0 1.5rem;
+
+    cursor: pointer;
+
+    transition: background-color ease 0.3s;
+}
+
+.button_active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button_inactive {
+    background-color: #bebebe;
+    color: var(--black);
+}
+
+@media (any-hover: hover) {
+    .button_filter:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+}

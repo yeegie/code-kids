@@ -1,13 +1,7 @@
-.container {
-  display: grid;
-  gap: 1rem;
+.courses {
+  margin: 25px 0;
 
-  justify-content: center;
-
-  grid-template-columns: repeat(4, 300px);
-}
-
-.section {
-  display: grid;
-  grid-row: repeat(2, 1fr);
+  .courses__list {
+    padding: 40px 0;
+  }
 }

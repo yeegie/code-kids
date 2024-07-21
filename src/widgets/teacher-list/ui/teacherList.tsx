@@ -1,6 +1,7 @@
 import styles from "./teacherList.module.scss";
 import { ITeacher, TeacherCard } from "@entities/teacher";
 import { Title } from "@shared/ui/title";
+import clsx from "clsx";
 
 export interface TeacherListProps {
   teachers?: ITeacher[];
@@ -21,11 +22,13 @@ export const TeacherList: React.FC<TeacherListProps> = ({ teachers }) => {
     : null;
 
   return (
-    <div className={styles.section}>
-      <Title fontSize="25pt">👨🏻‍🏫 Наши преподаватели</Title>
-      <div className={styles.container}>
-        {teachersList ? teachersList : null}
+    <section className={styles.teachers}>
+      <div className="container">
+        <Title>👨🏻‍🏫 Наши преподаватели</Title>
+        <div className={clsx("grid", styles.teachers__list)}>
+          {teachersList ? teachersList : null}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };

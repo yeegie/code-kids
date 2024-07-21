@@ -1,5 +1,4 @@
 import styles from "./CourseCard.module.scss";
-import clsx from "clsx";
 
 import { Title } from "@shared/ui/title";
 import { Paragraph } from "@shared/ui/paragraph";
@@ -31,22 +30,16 @@ export const CourseCard: React.FC<CourseCardProps> = ({
           : "Больше года";
 
   return (
-    <div
-      className={clsx(styles.card)}
-      style={{
-        ...cardColor,
-      }}
-    >
-      <div className={styles.info}>
-        {info == "popular" ? <InfoTag /> : null}
+    <article className={styles.card} style={{...cardColor}}>
+      <div className={styles.card__info}>{info === "popular" ? <InfoTag /> : null}</div>
+      <div className={styles.card__body}>
+        <div>
+          <Title size={2}>{title}</Title>
+          <Paragraph>{mounthsText}</Paragraph>
+        </div>
+        <img src={image} alt={`${title} preview`} width={100} height={100} />
       </div>
-      <div className={styles.content}>
-        <Title fontSize="18pt">{title}</Title>
-        <Paragraph fontSize="14pt">{mounthsText}</Paragraph>
-      </div>
-      <div>
-        <img src={image} />
-      </div>
-    </div>
+    </article>
   );
 };
+
